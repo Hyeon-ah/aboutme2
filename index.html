@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>정현아</title>
+	<style>
+		body {
+			background-color: #F5C220;
+		}
+
+		.profile {
+			width: 100px;
+			height: 100px;
+			background-image: url("jha_picture.jpg");
+			background-position: center;
+			background-size: cover;
+			border-radius: 100%;
+			border:  2px solid white;
+		}
+		.main {
+			color: white;
+			font-size: 20px;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+		.sub {
+			color: white;
+			font-size: 14px;
+			margin-top: 0px;
+			margin-bottom: 30px;
+		}
+		.wrap {
+			/*#background-color: green;/* -> 나중에 지우기*/*/
+			width: 350px;
+			margin: 30px auto 0px auto; /*#(위, 오른쪽, 아래, 왼쪽) auto로 지정하면 윈도우 사이즈를 고려하여 양 옆으로 민다.*/
+
+			/*# 네 줄은 거의 붙어 다닌다.*/
+			display: flex;
+			flex-direction: column; /*#colume인지 row인지만 바꾼다.*/
+			justify-content: center;
+			align-items: center;
+		}
+		.wrap > a {
+			width: 300px;
+			height: 50px;
+			
+			background-color: white;
+			border-radius: 8px;
+
+			margin-bottom: 10px;
+
+			font-size: 14px;
+			font-weight: bold;
+			color: #44398A;
+
+			/*# 네 줄은 거의 붙어 다닌다.*/
+			display: flex;
+			flex-direction: column; /*#colume인지 row인지만 바꾼다.*/
+			justify-content: center;
+			align-items: center;
+
+			/*#줄 없애기*/
+			text-decoration: none;
+
+			/*#그림자 만들기*/
+			box-shadow: 3px 3px 5px 0px black;  /*# 처음 2개: 오른쪽 밑으로 얼마나 갈거냐, 다음 1개: 꼬리의 길이, 다음 1개: 꼬리의 선명도, 색상*/
+		}
+		/*마우스호버 이벤트*/
+		.wrap > a:hover{
+			background-color: #f2f2f2;
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="profile"></div>
+		<h1 class="main">정현아</h1>
+		<p class="sub">조선대학교 음성학연구실 정현아입니다.</p>
+		<a target="_blank" href="https://www.chosunbabylab.com/">음성학연구실</a>
+		<a target="_blank" href="hhttps://github.com/Hyeon-ah">Github</a>
+	</div>
+</body>
+</html>
